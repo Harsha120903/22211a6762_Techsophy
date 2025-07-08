@@ -1,0 +1,19 @@
+{
+    "symbols": ["TSLA", "NVDA", "AMD"],
+    "period": "1d",
+    "interval": "1m",
+    "window": 5,
+    "z_score_threshold": 1.0,
+    "percent_change_threshold": 0.2,
+    "market_open_ignore_minutes": 10,
+    "poll_interval_seconds": 15,
+    "output_file": "anomalies.json",
+    "detection_method": "z_score",
+    "lstm_params": {
+        "lookback": 10,
+        "prediction_threshold": 0.003,
+        "epochs": 20,
+        "batch_size": 32
+    },
+    "max_iterations": 3
+}
